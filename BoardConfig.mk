@@ -7,6 +7,7 @@ LOCAL_PATH := device/motorola/xt926dev
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8960-common
+TARGET_KERNEL_CONFIG := msm8960_xt926_cm10_defconfig
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel/zImage
 else
