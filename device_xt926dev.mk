@@ -1,6 +1,6 @@
 $(call inherit-product, device/motorola/vanquish-common/device.mk)
 
-LOCAL_PATH := device/motorola/xt926
+LOCAL_PATH := device/motorola/xt926dev
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnCdmaDevice=1 \
@@ -19,4 +19,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.skip_data_check=1 \
 	persist.ril.max.crit.qmi.fails=4 \
 
-$(call inherit-product-if-exists, vendor/motorola/xt926/xt926-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/xt926dev/xt926dev-vendor.mk)

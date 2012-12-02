@@ -1,5 +1,5 @@
 ### copy to obj/ the prebuilts needed to build open source libraries
-LOCAL_PATH := vendor/motorola/xt926
+LOCAL_PATH := vendor/motorola/xt926dev
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
