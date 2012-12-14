@@ -19,4 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.skip_data_check=1 \
 	persist.ril.max.crit.qmi.fails=4 \
 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf \
+
 $(call inherit-product-if-exists, vendor/motorola/xt926dev/xt926dev-vendor.mk)
