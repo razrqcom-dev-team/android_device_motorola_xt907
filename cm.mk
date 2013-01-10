@@ -7,7 +7,6 @@ $(call inherit-product, device/motorola/vanquish-common/cm.mk)
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
 
-
 # Release name
 PRODUCT_RELEASE_NAME := xt907
 
