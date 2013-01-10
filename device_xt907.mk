@@ -1,6 +1,8 @@
 $(call inherit-product, device/motorola/vanquish-common/device.mk)
 
-LOCAL_PATH := device/motorola/xt926dev
+LOCAL_PATH := device/motorola/xt907
+
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnCdmaDevice=1 \
@@ -22,9 +24,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf \
 
+# IDC
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc
+
 #safestrap support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernelmodules/cfg80211.ko:system/lib/modules/prima/cfg80211.ko \
     $(LOCAL_PATH)/kernelmodules/prima_wlan.ko:system/lib/modules/prima/prima_wlan.ko
 
-$(call inherit-product-if-exists, vendor/motorola/xt926dev/xt926dev-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/xt907/xt907-vendor.mk)

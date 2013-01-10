@@ -5,4 +5,4 @@ include $(CLEAR_VARS)
 ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 # include the non-open-source counterpart to this file
--include vendor/motorola/xt926dev/AndroidBoardVendor.mk
+-include vendor/motorola/xt907/AndroidBoardVendor.mk

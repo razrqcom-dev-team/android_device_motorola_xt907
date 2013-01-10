@@ -1,1 +1,1 @@
-add_lunch_combo cm_xt926dev-userdebug
+add_lunch_combo cm_xt907-userdebug

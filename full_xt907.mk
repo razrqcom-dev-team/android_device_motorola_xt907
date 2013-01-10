@@ -1,10 +1,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, device/motorola/xt926dev/device_xt926dev.mk)
+$(call inherit-product, device/motorola/xt907/device_xt907.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := xt926dev
-PRODUCT_NAME := cm_xt926dev
+PRODUCT_DEVICE := xt907
+PRODUCT_NAME := cm_xt907
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := XT926
+PRODUCT_MODEL := XT907
 PRODUCT_MANUFACTURER := motorola
