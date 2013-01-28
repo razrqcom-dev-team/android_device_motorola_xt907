@@ -23,3 +23,6 @@ BOARD_KERNEL_CMDLINE := console=/dev/null androidboot.hardware=qcom user_debug=3
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
+
+#bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
