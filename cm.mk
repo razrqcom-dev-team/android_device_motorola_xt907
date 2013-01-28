@@ -9,6 +9,7 @@ TARGET_SCREEN_WIDTH := 540
 
 # Release name
 PRODUCT_RELEASE_NAME := xt907
+PRODUCT_NAME := cm_xt907
 
 $(call inherit-product, device/motorola/xt907/full_xt907.mk)
 
