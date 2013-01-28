@@ -2,6 +2,9 @@ $(call inherit-product, device/motorola/vanquish-common/device.mk)
 
 LOCAL_PATH := device/motorola/xt907
 
+# xt907 specific overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
