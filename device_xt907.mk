@@ -37,15 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.mot.ignore_csim_appid=true
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
 
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc
-
-#safestrap support
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernelmodules/cfg80211.ko:system/lib/modules/prima/cfg80211.ko \
-    $(LOCAL_PATH)/kernelmodules/prima_wlan.ko:system/lib/modules/prima/prima_wlan.ko
 
 $(call inherit-product-if-exists, vendor/motorola/xt907/xt907-vendor.mk)
