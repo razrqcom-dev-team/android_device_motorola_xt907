@@ -43,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.alpha=Verizon \
     ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
     ro.telephony.default_network=10 \
-    ro.mot.ignore_csim_appid=true
+    ro.mot.ignore_csim_appid=true \
+    telephony.rilV7NeedCDMALTEPhone=true
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
