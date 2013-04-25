@@ -1,3 +1,6 @@
+TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYCHARS := true
+TARGET_USES_MOTOROLA_MSM8960_COMMON_KEYLAYOUT := true
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -47,6 +50,7 @@ PRODUCT_COPY_FILES += \
 
 # IDC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc
+    $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
+    $(LOCAL_PATH)/idc/evfwd.idc:system/usr/idc/evfwd.dc
 
 $(call inherit-product-if-exists, vendor/motorola/xt907/xt907-vendor.mk)
