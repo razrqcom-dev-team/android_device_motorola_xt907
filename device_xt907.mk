@@ -53,4 +53,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
     $(LOCAL_PATH)/idc/evfwd.idc:system/usr/idc/evfwd.dc
 
+$(call inherit-product, device/motorola/msm8960-common/modules/nfc/nfc.mk)
 $(call inherit-product-if-exists, vendor/motorola/xt907/xt907-vendor.mk)
