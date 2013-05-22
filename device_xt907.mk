@@ -44,7 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=10 \
     ro.mot.ignore_csim_appid=true \
     telephony.rilV7NeedCDMALTEPhone=true \
-    ro.cdma.subscribe_on_ruim_ready=true
+    ro.cdma.subscribe_on_ruim_ready=true \
+    persist.timed.enable=true
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
