@@ -53,7 +53,9 @@ PRODUCT_COPY_FILES += \
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
-    $(LOCAL_PATH)/idc/evfwd.idc:system/usr/idc/evfwd.idc
+    $(LOCAL_PATH)/idc/evfwd.idc:system/usr/idc/evfwd.idc \
+    $(LOCAL_PATH)/idc/atmxt-i2c.idc:recovery/root/vendor/firmware/atmxt-i2c.idc \
+    vendor/motorola/xt907/proprietary/etc/firmware/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
 
 $(call inherit-product, device/motorola/msm8960-common/keychars/keychars.mk)
 $(call inherit-product, device/motorola/msm8960-common/keylayout/keylayout.mk)
