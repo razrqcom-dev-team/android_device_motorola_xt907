@@ -1,12 +1,9 @@
 # proprietary file list
 # bin/filename
-app/appdirectedsmspermission.apk
-app/VerizonSSOEngine.apk
-app/VZWAPNLib.apk
-app/vzwapnpermission.apk
-app/VZWAPNService.apk
+
+#wcd9310
+etc/firmware/wcd9310/wcd9310_anc.bin
+etc/firmware/wcd9310/wcd9310_mbhc.bin
+
+#touchscreen
 etc/firmware/atmxt-r2.tdat
-etc/permissions/com.verizon.hardware.telephony.ehrpd.xml
-etc/permissions/com.verizon.hardware.telephony.lte.xml
-etc/permissions/com.vzw.vzwapnlib.xml
-lib/libmotricity.so
