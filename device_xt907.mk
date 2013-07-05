@@ -61,9 +61,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.subscribe_on_ruim_ready=true \
     persist.timed.enable=true
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
-
 # IDC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
