@@ -71,4 +71,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/motorola/msm8960-common/keychars/keychars.mk)
 $(call inherit-product, device/motorola/msm8960-common/keylayout/keylayout.mk)
 $(call inherit-product, device/motorola/msm8960-common/modules/nfc/nfc.mk)
-$(call inherit-product-if-exists, vendor/motorola/xt907/xt907-vendor.mk)
+$(call inherit-product, vendor/motorola/xt907/xt907-vendor.mk)
