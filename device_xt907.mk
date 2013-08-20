@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
-    ro.config.svlte1x=true \
+    ro.config.svdo=true \
     persist.radio.eons.enabled= true \
     ro.cdma.nbpcd=1 \
     ro.cdma.home.operator.isnan=1 \
