@@ -31,6 +31,9 @@ LOCAL_PATH := device/motorola/xt907
 # Use common resources
 TARGET_USES_MOTOROLA_MSM8960_COMMON_LIBLIGHT := true
 
+# xt907 has smaller res front cam
+TARGET_USES_MOTOROLA_MSM8960_COMMON_MEDIA_PROFILES := false
+
 # NFC
 BOARD_HAVE_NFC := true
 
