@@ -31,9 +31,6 @@ LOCAL_PATH := device/motorola/xt907
 # xt907 has smaller res front cam
 TARGET_USES_MOTOROLA_MSM8960_COMMON_MEDIA_PROFILES := false
 
-# NFC
-BOARD_HAVE_NFC := true
-
 #bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
