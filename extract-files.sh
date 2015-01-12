@@ -1,7 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-
-export VENDOR=motorola
 export DEVICE=xt907
+export FAMILY_DEVICE=msm8960-common
 
-../msm8960-common/extract-files.sh $@
+../$FAMILY_DEVICE/extract-files.sh $@
